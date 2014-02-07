@@ -1,0 +1,14 @@
+// Vars and Mixins
+$red: #dadada;
+
+// --------------------
+// General Styles
+* { box-sizing: border-box; }
+body {
+  background: $red;
+  .class-name {
+    border-radius: 5px;
+    box-shadow: 0 0 2px yellow;
+  }
+}
+// END General Styles ----------
