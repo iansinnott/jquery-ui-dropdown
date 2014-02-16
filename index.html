@@ -4,12 +4,39 @@
   <meta charset="UTF-8">
   <title>jQuery UI Dropdown Menu</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+
+  </style>
 </head>
 <body>
-  <h1>Welcome to the plugin page</h1>
+  <h1>Super Awesome Widget Page</h1>
+
+  <div class="demo">
+    <ul class="awesome-boss">
+      <li><a href="#">First Link</a></li>
+      <li><a href="#">Second Link</a></li>
+      <li><a href="#">Third Link</a></li>
+      <li><a href="#">Fourth Link</a></li>
+    </ul>
+  </div>
   
 <script src="bower_components/jquery/jquery.min.js"></script>
 <script src="bower_components/jquery-ui/ui/minified/jquery-ui.min.js"></script>
 <script src="js/jquery-ui.dropdown.js"></script> 
+<script>
+  (function(window, document, $){
+    $(document).ready(function() {
+
+      $('ul.awesome-boss').dropdown({
+        className: 'boosh',
+        toggle: function(e, ui) {
+          console.log('You just toggled the Widget!')
+        }
+      })
+
+    })
+  })(window, document, jQuery);
+</script>
+<!-- <script src="js/jquery-ui.filterable.js"></script>  -->
 </body>
 </html>
