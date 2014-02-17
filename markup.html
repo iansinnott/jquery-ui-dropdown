@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery UI Dropdown Menu Examples</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>The following should all work with the plugin:</h1>
+
+  <!-- Standard markup. Wrap this markup if wrap: is not '' -->
+  <a href="#">Open Dropdown</a>
+  <ul>
+    <li><a href="#">First Link</a></li>
+    <li><a href="#">Second Link</a></li>
+    <li><a href="#">Third Link</a></li>
+    <li><a href="#">Fourth Link</a></li>
+  </ul>
+
+  
+  <!-- I'l translate the markup into something like the above -->
+  <a class="dropdown-toggle" href="#">Open Dropdown</a>
+  <a href="#">First Link</a>
+  <a href="#">Second Link</a>
+  <a href="#">Third Link</a>
+  <a href="#">Fourth Link</a>
+
+
+  <ul id="cheeses">
+    <li data-price="17.99">Gruyere</li>
+    <li data-price="16.99">Comte</li>
+    <li data-price="4.99">Provolone</li>
+    <li data-price="8.99">Cheddar</li>
+    <li data-price="18.99">Parmigiano Reggiano</li>
+    <li data-price=".99">Government</li>
+  </ul>
+  <div id="register">
+    One pound of each would cost $<span id="total"></span>
+  </div>
+  
+<script src="bower_components/jquery/jquery.min.js"></script>
+<script src="bower_components/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+<script src="js/jquery-ui.dropdown.js"></script> 
+<script src="js/jquery-ui.filterable.js"></script> 
+</body>
+</html>
